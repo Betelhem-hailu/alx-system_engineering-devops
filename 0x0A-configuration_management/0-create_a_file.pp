@@ -1,8 +1,8 @@
-file { 'tmp/school':
-  ensure  => present,
-  path    => '/tmp/school',
-  owner   => 'www-data',
+file { 'school':
+  ensure  => 'present',
+  content => 'I love Puppet',
   group   => 'www-data',
   mode    => '0744',
-  content => 'I love puppet',
+  owner   => 'www-data',
+  path    => '/tmp/school',
 }
