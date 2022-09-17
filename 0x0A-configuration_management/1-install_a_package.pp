@@ -1,5 +1,4 @@
 # Install framework using Puppet
-package {'flask':
-ensure => 'installed',
-provider => 'pip3'
+file { 'flask':
+validate_cmd => 'pip3 install flask'
 }
