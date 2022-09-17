@@ -1,4 +1,4 @@
 # Executes command to kill a process
 exec { 'execution':
-command => 'kill -pkill killmenow, 
+command => 'kill -p killmenow 
 }
