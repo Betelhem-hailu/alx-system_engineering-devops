@@ -1,6 +1,6 @@
 # Creates a file and set permission
 file { 'school':
-  ensure  => 'file',
+  ensure  => 'present',
   content => 'I love Puppet',
   group   => 'www-data',
   mode    => '0744',
